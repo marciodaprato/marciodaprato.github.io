@@ -3,69 +3,79 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Inverted Skyscraper</title>
 
 <style>
 body{
   margin:0;
   background:linear-gradient(to bottom, #ffffff 0%, #e8e6df 100%);
-  color:#111;
-  font-family: "Times New Roman", Georgia, serif;
+  color:#111111;
+  min-height:100vh;
   display:flex;
   align-items:center;
   justify-content:center;
-  min-height:100vh;
 }
 
 main{
-  max-width:680px;
-  padding:60px 30px;
+  width:100%;
+  max-width:900px;
+  padding:80px 40px 90px 40px;
   text-align:center;
-  line-height:1.8;
+  box-sizing:border-box;
 }
 
-/* FRASE PRINCIPAL (SISTEMA) */
-.sistema{
-  font-size:1.6rem;
-  letter-spacing:0.25em;
+/* bloque superior */
+.titulo1{
+  font-family:"High Tower Text", "Times New Roman", serif;
+  font-size:48pt;
+  letter-spacing:0.12em;
   text-transform:uppercase;
-  margin-bottom:60px;
+  line-height:1.1;
+  margin:0;
 }
 
-/* FRASE DE TACITO */
-.tacito{
-  font-size:1.4rem;
-  margin-bottom:12px;
+.titulo2{
+  font-family:"High Tower Text", "Times New Roman", serif;
+  font-size:21.5pt;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  line-height:1.2;
+  margin:6px 0 0 0;
 }
 
-/* FIRMA */
+/* separación grande entre bloques */
+.separador{
+  height:210px;
+}
+
+/* bloque inferior */
+.cita{
+  font-family:"Times New Roman", Times, serif;
+  font-size:12pt;
+  line-height:1.5;
+  margin:0;
+}
+
 .autor{
-  font-size:0.8rem;
-  letter-spacing:0.15em;
+  font-family:"Times New Roman", Times, serif;
+  font-size:12pt;
+  letter-spacing:0.08em;
   text-transform:uppercase;
-  opacity:0.5;
+  line-height:1.4;
+  margin:6px 0 0 0;
 }
 </style>
 </head>
 
 <body>
+  <main>
+    <p class="titulo1">INVERTED SKYSCRAPER</p>
+    <p class="titulo2">WE CALL IT PROGRESS</p>
 
-<main>
+    <div class="separador"></div>
 
-  <div class="sistema">
-    INVERTED SKYSCRAPER — WE CALL IT PROGRESS
-  </div>
-
-  <div class="tacito">
-    “Donde hacen un desierto, lo llaman paz.”
-  </div>
-
-  <div class="autor">
-    TÁCITO
-  </div>
-
-</main>
-
+    <p class="cita">“Donde hacen un desierto, lo llaman paz.”</p>
+    <p class="autor">TÁCITO</p>
+  </main>
 </body>
 </html>
